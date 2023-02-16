@@ -16,7 +16,7 @@ def index():
     # Choose a random jpg file
     random_file = random.choice(jpg_files)
 
-    # Serve the index.html file, passing in the path to the randomly selected jpg
+    # Serve the index.html file, passing in the
     return render_template('index.html', image_path=os.path.join('/static', random_file))
 
 @app.route('/static/<path:filename>')
